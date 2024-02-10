@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gi meg 100kr</title>
+</head>
+<body>
+    <h1>Velkommen til markedet (knock off amazon, bare verre)</h1>
+    <h2>Siste produkter lagt ut:</h2>
+
+    <form action="insert_product.php" method="get">
+        <h3>Legg ut et produkt:</h3>
+        <label for="name">Navn på produktet:</label>
+        <input type="text" name="name" id="name" placeholder="Navn på produktet" required>
+
+        <label for="description">Beskrivelse av produktet:</label>
+        <input type="text" name="description" id="description" placeholder="Beskrivelse av produktet" required>
+
+        <label for="price">Pris på produktet (NOK):</label>
+        <input type="text" name="price" id="price" placeholder="Pris på produktet (alt regnes i NOK)" required>
+
+        <label for="payment_delivery">Betalingsmetode og leveringsinformasjon:</label>
+        <input type="text" name="payment_delivery" id="payment_delivery" placeholder="Hvordan de skal betale og hvordan du leverer det:" required>
+
+        <label for="username">Ditt brukernavn:</label>
+        <input type="text" name="username" id="username" placeholder="Skriv inn brukernavnet ditt her:" required>
+
+        <input type="submit" value="Legg ut produkt">
+    </form>
+</body>
+</html>
